@@ -10,8 +10,6 @@ logger = logging.getLogger(__name__)
 class CausalSelfAttention(nn.Module):
     """
     A vanilla multi-head masked self-attention layer with a projection at the end.
-    I believe I could have just used torch.nn.MultiheadAttention but their documentation
-    is all but absent and code ugly so I don't trust it, rolling my own here.
     """
 
     def __init__(self, config):
