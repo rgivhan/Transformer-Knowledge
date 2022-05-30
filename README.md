@@ -20,7 +20,7 @@ Synthesizer attention: $Y_{i} = softmax(ReLU(XA_{i} + b_{1})B_{i} + b_{2})(XV_{i
 
 # Pretraining
 
-For specifics, see the CharCorruptionDataset class in dataset.py. To pretrain on the wikipedia text, a piece of text is randomly truncrated and masked. For every such piece of text, $x$, its label, $y$ is truncated by a single character at the beginning (i.e. $y = x[1:]$), such that, for each character, the model is trying to preidct the next character in the masked string $x$
+For specifics, see the CharCorruptionDataset class in dataset.py. To pretrain on the wikipedia text, a piece of text is randomly truncrated and masked. For every such piece of text, $x$, its label $y$ is truncated by a single character at the beginning (i.e. $y = x[1:]$), such that, for each character, the model is trying to preidct the next character in the masked string $x$
 
 I.e.\
 __Original__: Khatchig Mouradian. Khatchig Mouradian is a journalist, writer and translator born in Lebanon .\
