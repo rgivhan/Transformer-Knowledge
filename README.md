@@ -13,6 +13,9 @@ We then test its "knowledge" by asking it to predict the birthplaces of individu
 
 Two variants of self attention are tested: standard Masked multi-headed self-attention, and Synthesizer attention. The model using Masked multi-headed self-attention achieves an accuracy of ~20%. The model using the synthesizer variant, which is a form of attention that eschews the use of pairwise dot products, achieves ~17% accuracy. 
 
+Synthesizer attention: $Y_{i} = softmax(ReLU(XA_{i} + b_{1})B_{i} + b_{2})(XV_{i})$
+
+
 
 
 # Pretraining
