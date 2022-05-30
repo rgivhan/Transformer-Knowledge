@@ -19,9 +19,9 @@ Two variants of self attention are tested: standard Masked multi-headed self-att
 
 For specifics, see the CharCorruptionDataset class in dataset.py. To pretrain on the wikipedia text, a piece of text is randomly truncrated and masked. For every such piece of text, $x$, its label, $y$ is truncated by a single character at the beginning (i.e. $y = x[1:]$), such that, for each character, the model is trying to preidct the next character in the masked string $x$
 
-I.e. 
-Original: Khatchig Mouradian. Khatchig Mouradian is a journalist, writer and translator born in Lebanon .\
-x: Khatchig Mouradian. Khatchig Mouradian is a jour⁇and tran⁇nalist, writer ⁇□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□\
-y: hatchig Mouradian. Khatchig Mouradian is a jour⁇and tran⁇nalist, writer ⁇□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+I.e.\
+__Original__: Khatchig Mouradian. Khatchig Mouradian is a journalist, writer and translator born in Lebanon .\
+__x__: Khatchig Mouradian. Khatchig Mouradian is a jour⁇and tran⁇nalist, writer ⁇□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□\
+__y__: hatchig Mouradian. Khatchig Mouradian is a jour⁇and tran⁇nalist, writer ⁇□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
 
