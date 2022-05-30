@@ -45,8 +45,6 @@ class NameDataset(Dataset):
 
 
 """
-[part e]
-
 Write a class that yields examples of a simplified span corruption objective.
 Do not change the signature of the __init__ or __getitem__ functions.
 
@@ -87,9 +85,7 @@ at the given index. We'll call the resulting data entry a document.
 1. Randomly truncate the document to a length no less than 4 characters,
 and no more than int(self.block_size*7/8) characters.
 
-- IMPORTANT: You are free to decide how to perform this random truncation, but
-make sure that the length is picked _randomly_ (every possible length from 4
-to int(self.block_size*7/8) has a chance of being picked) for full credit.
+- Every possible length from 4 to int(self.block_size*7/8) has a chance of being picked.
 
 2. Now, break the (truncated) document into three substrings:
     
@@ -100,9 +96,8 @@ to int(self.block_size*7/8) has a chance of being picked) for full credit.
   The length of [masked_content] should be random, and 1/4 the length of the
     truncated document on average.
 
-- IMPORTANT: You are free to decide how to perform this operation, but
-make sure that the length is picked _randomly_ (has a chance of being more or
-less than 1/4 the length of the truncated document) for full credit.
+- the length is picked _randomly_ (has a chance of being more or
+less than 1/4 the length of the truncated document).
 
 3. Rearrange these substrings into the following form:
 
