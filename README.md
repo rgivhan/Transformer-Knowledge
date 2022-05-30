@@ -4,7 +4,7 @@ We test the performance of Kaparthy's minGPT Transformer model on a simple knowl
 
 First we pretrain minGPT on Wikipedia text about notable individuals, then we finetune it on name-birthplace pairs of the form: 
 
-Q: Where was [person] born?
+Q: Where was [person] born?\
 A: [place]
 
 We then test its "knowledge" by asking it to predict the birthplaces of individuals in the same question answer format as above. 
